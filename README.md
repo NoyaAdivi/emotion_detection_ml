@@ -1,4 +1,3 @@
-# emotion_detection_ml
 # Text Emotion Recognition 🎭
 
 > **Note:** Final project for the Machine Learning course at Holon Institute of Technology (HIT). 
@@ -16,14 +15,23 @@ We implemented a **Multinomial Naive Bayes** classifier completely from scratch.
 Instead of using pre-built library functions for the algorithm, we wrote the core training and prediction logic ourselves. We also implemented **Laplace Smoothing** (controlled by an alpha parameter) to prevent zero-probability errors when the model encounters words during testing that it did not see during training.
 
 ## ⚙️ Workflow & Preprocessing
-* **Text Processing:** Text was vectorized using the **Bag of Words (BoW)** approach. 
+* **Text Processing:** We compared two vectorization methods - **Bag of Words (BoW)** and **TF-IDF** - and selected the better one through Grid Search.
 * **Noise Reduction:** We filtered out "stop words" (common conjunctions and prepositions) that do not carry emotional weight and contribute no value to the classification process.
 * **Evaluation Metric:** We selected the **Macro-average F1-score**. This metric calculates the success rate for each emotion independently and averages them equally. This was critical for our use case to ensure that rare emotions (like surprise and love) were not overshadowed by more frequent ones.
 
 ## 🚀 Advanced Features & Enhancements
-* **Hyperparameter Tuning (Grid Search):** Instead of manual guessing, we ran an automated Grid Search combined with **5-fold Cross-Validation** to discover the optimal combination of text processing parameters and the model's alpha value.
+* **Hyperparameter Tuning (Grid Search):** Instead of manual guessing, we ran an automated Grid Search combined with **5-fold Cross-Validation** to discover the optimal combination of vectorization method (BoW vs. TF-IDF) and the model's alpha value.
 * **Handling Class Imbalance:** We identified that certain emotions had very few examples. We resolved this by applying **Oversampling** to the minority classes in the training set until all emotions were perfectly balanced.
 * **Model Explainability:** To demonstrate what the model actually learned, we extracted the **top 8 most indicative words** for each emotion based on the algorithm's internal probability calculations. 
+
+## 📈 Results
+| Model | Test Macro-F1 | Accuracy |
+|---|---|---|
+| Baseline (alpha=1.0) | 0.63 | 78% |
+| After tuning + oversampling | 0.67 | 73% |
+
+* **Best configuration (5-fold CV):** Bag of Words with alpha=0.1, mean CV Macro-F1 = **0.694** (TF-IDF reached 0.609).
+* **Oversampling** raised recall for the rarest emotion (*surprise*) from **0.10 to 0.55**, at a small cost in overall accuracy - the right trade-off for a Macro-F1 objective.
 
 ## 💻 How to Run the Project
 The entire pipeline is encapsulated in a single Jupyter Notebook (`.ipynb`).

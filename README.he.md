@@ -34,8 +34,12 @@
   </tr>
 </table>
 
+<p align="center">
+  <a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><img src="docs/readme/showcase-he.png" width="100%" alt="Emotion Detection: מסווג רגשות בטקסט שנבנה מאפס"></a>
+</p>
+
 <a name="highlights"></a>
-<p align="center"><a href="#highlights"><img src="docs/readme/highlights-he.svg" width="100%" alt="מה מיוחד בו"></a></p>
+<p align="center"><a href="Notebook.ipynb"><img src="docs/readme/highlights-he.svg" width="100%" alt="מה מיוחד בו"></a></p>
 
 <table>
   <tr valign="top">
@@ -46,7 +50,7 @@
 </table>
 
 <a name="how-it-works"></a>
-<p align="center"><a href="#how-it-works"><img src="docs/readme/how-it-works-he.svg" width="100%" alt="איך זה עובד"></a></p>
+<p align="center"><a href="https://www.kaggle.com/datasets/abhrajaiswal/emotions-detection-text-dataset"><img src="docs/readme/how-it-works-he.svg" width="100%" alt="איך זה עובד"></a></p>
 
 ```mermaid
 flowchart RL
@@ -66,7 +70,7 @@ flowchart RL
 ב־[מאגר הנתונים מ־Kaggle](https://www.kaggle.com/datasets/abhrajaiswal/emotions-detection-text-dataset) יש 16,000 משפטים מתויגים באנגלית, 80% לאימון ו־20% לבדיקה. המחברת מורידה אותו לבד.
 
 <a name="results"></a>
-<p align="center"><a href="#results"><img src="docs/readme/results-he.svg" width="100%" alt="תוצאות"></a></p>
+<p align="center"><a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><img src="docs/readme/results-he.svg" width="100%" alt="תוצאות"></a></p>
 
 | מודל | Macro-F1 בבדיקה | דיוק |
 |---|:---:|:---:|
@@ -77,7 +81,7 @@ flowchart RL
 - **Oversampling** העלה את ה־recall של הרגש הנדיר ביותר, *הפתעה*, מ־**0.10 ל־0.55**, במחיר קטן בדיוק הכללי. זו הבחירה הנכונה כשהמטרה היא Macro-F1.
 
 <a name="tech-stack"></a>
-<p align="center"><a href="#tech-stack"><img src="docs/readme/tech-stack-he.svg" width="100%" alt="טכנולוגיות"></a></p>
+<p align="center"><a href="requirements.txt"><img src="docs/readme/tech-stack-he.svg" width="100%" alt="טכנולוגיות"></a></p>
 
 <p align="center">
   <a href="https://www.python.org"><img src="https://img.shields.io/badge/Python-CFE6FA?style=for-the-badge&logo=python&logoColor=3F6D9F" alt="Python"></a>
@@ -90,7 +94,7 @@ flowchart RL
 </p>
 
 <a name="run-it"></a>
-<p align="center"><a href="#run-it"><img src="docs/readme/run-it-he.svg" width="100%" alt="הרצה"></a></p>
+<p align="center"><a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><img src="docs/readme/run-it-he.svg" width="100%" alt="הרצה"></a></p>
 
 1. לוחצים על <a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><b>לפתוח ב־Colab</b></a>, או מורידים את [`Notebook.ipynb`](Notebook.ipynb) ופותחים ב־Jupyter (`pip install -r` [`requirements.txt`](requirements.txt)).
 2. מריצים את התאים לפי הסדר. הנתונים יורדים אוטומטית.
@@ -99,7 +103,7 @@ flowchart RL
 <p><b>👥 הצוות:</b> נויה א. · עמית א. · אמיר מ.</p>
 
 <a name="contact"></a>
-<p align="center"><a href="#contact"><img src="docs/readme/footer-he.svg" width="100%" alt="נבנה על ידי נויה אדיבי"></a></p>
+<p align="center"><a href="https://www.linkedin.com/in/noya-adivi/"><img src="docs/readme/footer-he.svg" width="100%" alt="נוצר על ידי נויה אדיבי"></a></p>
 
 <p align="center">
   <a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><img src="https://img.shields.io/badge/%D7%9C%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98-FFD5C9?style=for-the-badge&logo=github&logoColor=A8483A" alt="לפרויקט"></a>

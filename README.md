@@ -37,7 +37,7 @@
 </p>
 
 <a name="highlights"></a>
-<p align="center"><a href="Notebook.ipynb"><img src="docs/readme/highlights-en.svg" width="100%" alt="Highlights"></a></p>
+<p align="center"><a href="#how-it-works"><img src="docs/readme/highlights-en.svg" width="100%" alt="Highlights"></a></p>
 
 <table>
   <tr valign="top">
@@ -48,7 +48,7 @@
 </table>
 
 <a name="how-it-works"></a>
-<p align="center"><a href="https://www.kaggle.com/datasets/abhrajaiswal/emotions-detection-text-dataset"><img src="docs/readme/how-it-works-en.svg" width="100%" alt="How it works"></a></p>
+<p align="center"><a href="#results"><img src="docs/readme/how-it-works-en.svg" width="100%" alt="How it works"></a></p>
 
 ```mermaid
 flowchart LR
@@ -68,7 +68,7 @@ flowchart LR
 The [Kaggle dataset](https://www.kaggle.com/datasets/abhrajaiswal/emotions-detection-text-dataset) has 16,000 labeled English sentences, split 80% for training and 20% for testing. The notebook downloads it by itself.
 
 <a name="results"></a>
-<p align="center"><a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><img src="docs/readme/results-en.svg" width="100%" alt="Results"></a></p>
+<p align="center"><a href="#tech-stack"><img src="docs/readme/results-en.svg" width="100%" alt="Results"></a></p>
 
 | Model | Test Macro-F1 | Accuracy |
 |---|:---:|:---:|
@@ -79,7 +79,7 @@ The [Kaggle dataset](https://www.kaggle.com/datasets/abhrajaiswal/emotions-detec
 - **Oversampling** raised recall for the rarest emotion, *surprise*, from **0.10 to 0.55**, at a small cost in overall accuracy. That is the right trade-off when the goal is Macro-F1.
 
 <a name="tech-stack"></a>
-<p align="center"><a href="requirements.txt"><img src="docs/readme/tech-stack-en.svg" width="100%" alt="Tech Stack"></a></p>
+<p align="center"><a href="#run-it"><img src="docs/readme/tech-stack-en.svg" width="100%" alt="Tech Stack"></a></p>
 
 <p align="center">
   <a href="https://www.python.org"><img src="https://img.shields.io/badge/Python-CFE6FA?style=for-the-badge&logo=python&logoColor=3F6D9F" alt="Python"></a>
@@ -92,7 +92,7 @@ The [Kaggle dataset](https://www.kaggle.com/datasets/abhrajaiswal/emotions-detec
 </p>
 
 <a name="run-it"></a>
-<p align="center"><a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><img src="docs/readme/run-it-en.svg" width="100%" alt="Run it"></a></p>
+<p align="center"><a href="#contact"><img src="docs/readme/run-it-en.svg" width="100%" alt="Run it"></a></p>
 
 1. Click <a href="https://colab.research.google.com/github/NoyaAdivi/emotion_detection_ml/blob/main/Notebook.ipynb"><b>Open in Colab</b></a>, or download [`Notebook.ipynb`](Notebook.ipynb) and open it in Jupyter (`pip install -r` [`requirements.txt`](requirements.txt)).
 2. Run the cells in order. The dataset downloads automatically.
